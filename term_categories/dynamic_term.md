@@ -2,7 +2,7 @@
 
 layout: default
 title: "Dynamic Term"
-permalink: /term_categories/dynamic_term
+permalink: term_categories/dynamic_term
 
 ---
 

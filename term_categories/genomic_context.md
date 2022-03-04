@@ -2,7 +2,7 @@
 
 layout: default
 title: "Genomic Context"
-permalink: /term_categories/genomic_context
+permalink: term_categories/genomic_context
 
 ---
 

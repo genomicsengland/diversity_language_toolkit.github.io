@@ -2,7 +2,7 @@
 
 layout: default
 title: "Green Listed"
-permalink: /term_categories/green_listed
+permalink: term_categories/green_listed
 
 ---
 

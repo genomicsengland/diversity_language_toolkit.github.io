@@ -2,7 +2,7 @@
 
 layout: default
 title: "Admixed"
-permalink: /terms/admixed
+permalink: terms/admixed
 
 ---
 
@@ -10,11 +10,11 @@ permalink: /terms/admixed
 
 ## Admixed
 
-[Green Listed - Generally accepted for use]({% link term_categories/green_listed.md %})
+[Green Listed - Generally accepted for use]({{site.baseurl}}/{% link term_categories/green_listed.md %})
 
-[Definition focuses on: Genomics Context]({% link term_categories/genomic_context.md%})
+[Definition focuses on: Genomics Context]({{site.baseurl}}/{% link term_categories/genomic_context.md%})
 
-[Dynamic Term -Acceptance of of word is always changing]({% link term_categories/dynamic_term.md %})
+[Dynamic Term -Acceptance of of word is always changing]({{site.baseurl}}/{% link term_categories/dynamic_term.md %})
 
 ### Why do we care about this at GEL
 

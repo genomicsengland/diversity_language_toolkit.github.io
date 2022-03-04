@@ -2,7 +2,7 @@
 
 layout: default
 title: "Ancestry"
-permalink: /terms/ancestry
+permalink: terms/ancestry
 
 ---
 
@@ -10,11 +10,11 @@ permalink: /terms/ancestry
 
 ## Ancestry
 
-[Green Listed - Generally accepted for use]({% link term_categories/green_listed.md %})
+[Green Listed - Generally accepted for use]({{site.baseurl}}/{% link term_categories/green_listed.md %})
 
-[Definition focuses on: Genomics Context]({% link term_categories/genomic_context.md%})
+[Definition focuses on: Genomics Context]({{site.baseurl}}/{% link term_categories/genomic_context.md%})
 
-[Dynamic Term -Acceptance of of word is always changing]({% link term_categories/dynamic_term.md %})
+[Dynamic Term -Acceptance of of word is always changing]({{site.baseurl}}/{% link term_categories/dynamic_term.md %})
 
 Ancestry is genetically inferred and specifies where each part of an individuals DNA likely originates from.
 
@@ -27,7 +27,7 @@ At GEL, we commonly use continental ancestry categories to group genomes. Howeve
 While you're here, checkout the GEL logo image before we go onto collapsible sections.
 
 
-![GEL Logo]({% link assets/images/gel_logo_screenshot_lowqual.png %})
+![GEL Logo]({{ site.baseurl }}/{% link assets/images/gel_logo_screenshot_lowqual.png %})
 
 
 <details>
