@@ -1,0 +1,98 @@
+<!-- stolen from https://github.com/pages-themes/midnight/blob/master/_layouts/default.html-->
+
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- <script src="{{ '/assets/js/respond.js' | relative_url }}"></script> -->
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!-- stolen from https://dev-yakuza.posstree.com/en/jekyll/search-bar/ -->
+      <!-- <div class="header_row">
+        <div class="header_col"> -->
+          <div id="title">
+            <a class="title_link" href="{% link index.md %}">{{ site.title | default: site.github.repository_name }}</a>
+            <p>{{ site.description | default: site.github.project_tagline }}</p>
+          </div>
+        <!-- </div> -->
+
+        <!-- <div class="search_col">
+            <div id="search-bar">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search" type="text" placeholder="Search..." />
+                <div id="search-result"></div>
+            </div>
+        </div> -->
+        
+      <!-- </div> -->
+      
+      
+    {{ content }}
+
+    </div>
+  </body>
+
+  <script>
+    $(function () {
+      var pages = [];
+      $.get('/api/search/search.json', function (data) {
+          pages = data;
+      });
+      $('#search').on('keyup', function () {
+          var keyword = this.value.toLowerCase();
+          var searchResult = [];
+
+          if (keyword.length > 0) {
+            $('#search-result').show();
+          } else {
+            $('#search-result').hide();
+          }
+          $('.result-item').remove();
+
+          for (var i = 0; i < pages.length; i++) {
+            var page = pages[i];
+            if (
+                page.title.toLowerCase().indexOf(keyword) >= 0 ||
+                page.description.toLowerCase().indexOf(keyword) >= 0
+            ) {
+                searchResult.push(page);
+            }
+          }
+          if (searchResult.length === 0) {
+          $('#search-result').append(
+              '<div class="result-item"><div class="description">There is no search result.</div></div>'
+          );
+          } else {
+          for (var i = 0; i < searchResult.length; i++) {
+              $('#search-result').append(
+              '<a class="result-item" href="' +
+                  searchResult[i].url +
+                  '"><div class="title">【' + searchResult[i].category + '】' +
+                  searchResult[i].title +
+                  '</div><div class="description">' +
+                  searchResult[i].description +
+                  '</div></a>'
+              );
+          }
+          }
+      });
+    });
+  </script>
+</html>

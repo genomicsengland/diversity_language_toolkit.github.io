@@ -1,0 +1,61 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="search-bar">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search" type="text" placeholder="Search..." />
+                <div id="search-result"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+    var pages = [];
+    $.get(lang + '/api/search/search.json', function (data) {
+        pages = data;
+    });
+    $('#search').on('keyup', function () {
+        var keyword = this.value.toLowerCase();
+        var searchResult = [];
+
+        if (keyword.length > 0) {
+        $('#search-result').show();
+        } else {
+        $('#search-result').hide();
+        }
+        $('.result-item').remove();
+
+        for (var i = 0; i < pages.length; i++) {
+        var page = pages[i];
+        if (
+            page.title.toLowerCase().indexOf(keyword) >= 0 ||
+            page.description.toLowerCase().indexOf(keyword) >= 0
+        ) {
+            searchResult.push(page);
+        }
+        }
+        if (searchResult.length === 0) {
+        $('#search-result').append(
+            '<div class="result-item"><div class="description">There is no search result.</div></div>'
+        );
+        } else {
+        for (var i = 0; i < searchResult.length; i++) {
+            $('#search-result').append(
+            '<a class="result-item" href="' +
+                searchResult[i].url +
+                '"><div class="title">【' + searchResult[i].category + '】' +
+                searchResult[i].title +
+                '</div><div class="description">' +
+                searchResult[i].description +
+                '</div></a>'
+            );
+        }
+        }
+    });
+    });
+</script>
