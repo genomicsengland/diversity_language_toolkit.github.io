@@ -45,6 +45,7 @@ Global, or continental, ancestry categories are imbalanced groupings that have n
 
 <details>
   <summary>Alternatives!</summary>
+  
   Always make it very specific what your query is, before conforming to continental ancestry groups.
   
 </details>
@@ -58,6 +59,7 @@ Global, or continental, ancestry categories are imbalanced groupings that have n
 
 <details>
   <summary>Related terms</summary>
- [Admixed] ({{site.baseurl}}/{% link term/admixed.md %})
+  
+ [Admixed]({{site.baseurl}}/{% link terms/admixed.md %})
   
 </details>
