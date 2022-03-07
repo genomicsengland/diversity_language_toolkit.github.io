@@ -7,7 +7,9 @@ permalink: /terms/ancestry
 ---
 
 [Green Listed - Generally accepted for use]()
+
 [Definition focuses on: Genomics Context]()
+
 [Dynamic Term -Acceptance of of word is always changing]()
 
 Ancestry is genetically inferred and specifies where each part of an individuals DNA likely originates from. Ancestry is a relative term to time, geography, reference data, and the methods used to estimate and infer ancestry. It is important to note that the conceptual frameworks used to estimate ancestry are based on assumptions of genetic homogeneity within ancestry groups and the ancestry groups considered tend to reflect the continents, which also correspond to racial categories.
@@ -40,13 +42,14 @@ At GEL, we commonly use continental ancestry categories to group genomes. Howeve
 Always make it very specific what your query is, before conforming to continental ancestry groups.
 </details>
 
-# Learn more!
-  
- [Getting Genetic Ancestry Right for Science and Society by Anna Lewis et al. (2021)] (https://arxiv.org/pdf/2110.05987.pdf)
-
 <details>
   <summary>Related terms</summary>
   
   Admixed
   
 </details>
+
+### Learn more!
+  
+ [Getting Genetic Ancestry Right for Science and Society by Anna Lewis et al. (2021)] (https://arxiv.org/pdf/2110.05987.pdf)
+
