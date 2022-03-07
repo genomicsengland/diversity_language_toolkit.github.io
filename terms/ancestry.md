@@ -39,6 +39,7 @@ Global, or continental, ancestry categories are imbalanced groupings that have n
 <details>
   <summary>What is the debate around this term!</summary>
   
+  
   Some researchers urge geneticists to move away from continental ancestry categories (e.g. African, East Asian, South Asian, European and American) since a singular location-specific notion of ancestry bears resemblance to racial groupings and further overlooks that ancestry changes over time and varies within continental groups. Oftentimes, race and ancestry are conflated which leads scientists and clinicians to attribute differences in health to innate biology rather than to social inequality (Too many scientists still say Caucasian  by Alice Popejoy, 2021). Continental ancestry categories disregard diverse populations from around the world who can not be reasonably categorised within them, and merge large groups of people who are genetically diverse - such as people from Africa.
   
 </details>
@@ -46,15 +47,18 @@ Global, or continental, ancestry categories are imbalanced groupings that have n
 <details>
   <summary>Alternatives!</summary>
   
+  
   Always make it very specific what your query is, before conforming to continental ancestry groups.
   
 </details>
 
 ## Learn more:
-* [Getting Genetic Ancestry Right for Science and Society by Anna Lewis et al. (2021)] (https://arxiv.org/pdf/2110.05987.pdf)
-* [Origins of Modern Human Ancestry by Anders Bergström et Al (2021)] (https://www.nature.com/articles/s41586-021-03244-5) 
-* [Where did your genetic ancestors come from? by Coop Lab (2017)] (https://gcbias.org/2017/12/19/1628/)
-* [Genetic Genealogy by Coop Lab (2019)] (https://gcbias.org/category/genetic-genealogy/) 
+
+
+* [Getting Genetic Ancestry Right for Science and Society by Anna Lewis et al. (2021)](https://arxiv.org/pdf/2110.05987.pdf)
+* [Origins of Modern Human Ancestry by Anders Bergström et Al (2021)](https://www.nature.com/articles/s41586-021-03244-5) 
+* [Where did your genetic ancestors come from? by Coop Lab (2017)](https://gcbias.org/2017/12/19/1628/)
+* [Genetic Genealogy by Coop Lab (2019)](https://gcbias.org/category/genetic-genealogy/) 
   
 
 <details>
